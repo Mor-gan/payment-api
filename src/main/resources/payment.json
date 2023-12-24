@@ -1,0 +1,23 @@
+[
+    {
+        "amount": 2000,
+        "balance": 4000,
+        "cardNumber": "2222 3333 4444 5555",
+        "cardHolderName":"Abimbola",
+        "cvv":"234"
+    },
+    {
+        "amount": 3000,
+        "balance": 5000,
+        "cardNumber": "2422 3393 4844 5955",
+        "cardHolderName":"bola",
+        "cvv":"284"
+    },
+    {
+        "amount": 6000,
+        "balance": 9000,
+        "cardNumber": "2122 3323 4434 5455",
+        "cardHolderName":"ola",
+        "cvv":"234"
+    }
+]
