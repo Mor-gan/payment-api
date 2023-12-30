@@ -11,6 +11,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class CardPaymentService {
 
+ String filePathString = "/Users/bimbo/Desktop/api/src/main/resources/payment.json";
+
     public static List<CardPayment> getAllPayments(String filePathString) {
 
         List<CardPayment> cardPayments = new ArrayList<>();
