@@ -29,9 +29,9 @@ public class CardPaymentService {
     }
 
     public static void save(CardPayment cardPayments, String outputFile) {
-          List<CardPayment> cardPayments = new ArrayList<>(); 
+          List<CardPayment cardPayments> cardPayments = new ArrayList<>(); 
         try {
-            cardPayments.add(cardPayment);
+            cardPayments.add(cardPayments);
             File outputFileObj = Paths.get(outputFile).toFile();
             ObjectMapper mapper = new ObjectMapper();
             mapper.writeValue(outputFileObj, cardPayments);
