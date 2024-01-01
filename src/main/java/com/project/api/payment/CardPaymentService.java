@@ -11,7 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class CardPaymentService {
 
- String filePathString = "/Users/bimbo/Desktop/api/src/main/resources/payment.json";
+    String filePathString = "/Users/bimbo/Desktop/api/src/main/resources/payment.json";
 
     public static List<CardPayment> getAllPayments(String filePathString) {
 
@@ -23,6 +23,7 @@ public class CardPaymentService {
             cardPayments.forEach(System.out::println);
         } catch (IOException e) {
             System.err.println(e.getMessage());
+            System.out.println("Hi");
         }
         return cardPayments;
     }
