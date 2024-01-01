@@ -27,4 +27,17 @@ public class CardPaymentService {
         }
         return cardPayments;
     }
+
+    public static void save(CardPayment cardPayments, String outputFile) {
+          List<CardPayment> cardPayments = new ArrayList<>(); 
+        try {
+            cardPayments.add(cardPayment);
+            File outputFileObj = Paths.get(outputFile).toFile();
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.writeValue(outputFileObj, cardPayments);
+            System.out.println("File created at: " + outputFile);
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+        }
+    }
 }
