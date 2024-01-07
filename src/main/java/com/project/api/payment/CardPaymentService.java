@@ -12,7 +12,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class CardPaymentService {
 
     String filePathString = "/Users/bimbo/Desktop/api/src/main/resources/payment.json";
-
+    String outputFile = "/Users/bimbo/Desktop/api/src/main/resources/newPayment.json";
+  
     public static List<CardPayment> getAllPayments(String filePathString) {
 
         List<CardPayment> cardPayments = new ArrayList<>();
@@ -29,12 +30,12 @@ public class CardPaymentService {
     }
 
     public static void save(CardPayment cardPayments, String outputFile) {
-          List<CardPayment cardPayments> cardPayments = new ArrayList<>(); 
+        List<CardPayment> newCardPayments = new ArrayList<>();
         try {
-            cardPayments.add(cardPayments);
+            newCardPayments.add(cardPayments);
             File outputFileObj = Paths.get(outputFile).toFile();
             ObjectMapper mapper = new ObjectMapper();
-            mapper.writeValue(outputFileObj, cardPayments);
+            mapper.writeValue(outputFileObj, newCardPayments);
             System.out.println("File created at: " + outputFile);
         } catch (IOException e) {
             System.err.println(e.getMessage());
